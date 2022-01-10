@@ -21,7 +21,6 @@ json ファイルを読み取り出力
 # 課題 3
 
 task3.py
-dataclass を使おう
 
 # 課題 4
 
