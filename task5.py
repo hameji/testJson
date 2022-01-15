@@ -22,7 +22,9 @@ print(f" type is {type(json_data)}") # type(変数) とすることで、その�
 # dataclass_jsonで利用できるように、dict型 から str型 に変換
 json_str = json.dumps(json_data) 
 
-# DecodableBook の dataclassに変換
+# DecodableBook の dataclassに変換 
+# ( Decodable とはjson -> dataclass へデコード(変換)可能との意味 )
+# 対義語は codable と言う dataclass -> jsonへコード(変換)
 book_from_json = DecodableBook.from_json(json_str)
 print(book_from_json)
 
