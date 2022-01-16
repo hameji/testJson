@@ -4,6 +4,11 @@ import json
 from dataclasses import dataclass
 from dataclasses_json import dataclass_json
 
+print(f" ============================== ")
+print(f" 課題5 ")
+print(f" ============================== ")
+
+# 順番としては、dataclass_jsonが先じゃないといけない
 @dataclass_json
 @dataclass
 class DecodableBook:
@@ -17,6 +22,7 @@ json_data = json.load(json_file3)
 
 # 中身確認用
 print(f" content of json file: {json_data}")
+print(f" ============================== ")
 print(f" type is {type(json_data)}") # type(変数) とすることで、その変数のクラスを確認できます。
 
 # dataclass_jsonで利用できるように、dict型 から str型 に変換
