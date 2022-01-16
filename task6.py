@@ -21,6 +21,7 @@ json_data = json.load(json_file3)
 json_str = json.dumps(json_data) 
 
 print(f" data is {json_str}")
+print(f" ============================== ")
 
 from typing import List # Python3.6 以降をサポート
 # Python 3.7以降のみにしたい場合、上記ではなく、下記の行で
@@ -33,7 +34,7 @@ from typing import List # Python3.6 以降をサポート
 class DecodableBooks:
     books: List[DecodableBook]
     
-# 気づいたかもしれませんが、jsonのkey名とプロパティ名は合わせないといけないです。
+# 気づいたかもしれませんが、jsonのkey名とclassのプロパティ名は合わせないといけないです。
     
 books_from_json = DecodableBooks.from_json(json_str)
 print(f" decoded data: {books_from_json}")
