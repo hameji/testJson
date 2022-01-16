@@ -9,6 +9,7 @@ from dataclasses_json import dataclass_json
 
 # test2.json をDecodableBookに分解してみましょう
 
+# このように書くことで、他のファイルの中身(クラスなど)を持ってこれる
 from task5 import DecodableBook
 
 print(f" ============================== ")
