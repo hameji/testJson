@@ -56,6 +56,6 @@ dataclassJson を使ってみよう <br>
 
 # 課題 6
 
-準備中<br>
+辞書・配列が複合的なデータを dataclass, dataclass_json を使ってデコードしよう<br>
 
 `python6.py` <br>
